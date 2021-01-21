@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DigitalKeyboardOpener</string>
+    <string name="open_calculator">Open calculator</string>
+    <string name="intent_uri">calculator://open</string>
 </resources>
