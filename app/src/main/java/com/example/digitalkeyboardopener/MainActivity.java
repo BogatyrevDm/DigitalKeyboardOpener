@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button buttonOpen = findViewById(R.id.button_open_calculator);
         buttonOpen.setOnClickListener(v -> {
-            Uri uri = Uri.parse("calculator://open");
+            Uri uri = Uri.parse(getString(R.string.intent_uri));
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             ActivityInfo activityInfo = intent.resolveActivityInfo(getPackageManager(), intent.getFlags());
             if (activityInfo != null) {
